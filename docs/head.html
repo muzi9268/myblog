@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="./lib/swiper/css/swiper.min.css">
+
+  <!-- Swiper JS -->
+  <script src="./lib/swiper/js/swiper.min.js"></script>
+
+  <!-- <script src="'./js/jquery-3.1.1.min.js'"></script> -->
+  <!-- <script src="./js/jquery-3.1.1.min.js"></script> -->
+
+
+  <!-- 引入zepto -->
+  <script src="./zepto/zepto.min.js"></script>
+
+  <link rel="stylesheet" href="./css/index.css">
+
+  <script>
+    $(function () {
+
+      //滚动导航栏变色
+      $(window).scroll(function () {
+        var top = $(window).scrollTop();
+        console.log(top);
+        top = top > 600 ? 600 : top;
+        // 134, 23, 39
+        var rgba = (600 - top) / 600;
+        $("header").css("background-color", "rgba(134, 23, 39," + rgba + ")");
+
+      })
+
+
+      //倒计时效果
+      function timeCalculation() {
+
+       
+        var startTime = new Date();
+        var endTime = new Date("2019/9/28 16:14:0");
+
+        var distanceTime = endTime.getTime() - startTime.getTime();
+
+        //获取剩余分钟数
+        var minutes = Math.floor(distanceTime / 1000 / 60);
+
+        //秒
+        var seconds = Math.floor(distanceTime / 1000 % 60);
+
+        //毫秒
+        var milliseconds = Math.floor(distanceTime % 1000 / 10);
+
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+        milliseconds = milliseconds < 10 ? "0" + milliseconds : milliseconds;
+
+        var strMin = minutes.toString();
+        var strSec = seconds.toString();
+        var strMsec = milliseconds.toString();
+
+        var allStr = strMin + strSec + strMsec;
+
+        if (distanceTime < 0) {
+          window.clearInterval(timeCalculation);
+          return;
+        }
+        //代码优化
+        $.each($(".num"), function (index, value) {
+          $(this).html(allStr.substr(index, 1));
+        })
+      }
+
+      setInterval(timeCalculation, 10);
+    })
+  </script>
+</head>
+
+<body>
+  <header>
+    <a href="#" class="logo"><span></span></a>
+    <input type="text" class="search-input">
+    <a href="#" class="sign">登录</a>
+  </header>
+  <main>
+    <div class="banner">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./images/l1.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./images/l2.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./images/l3.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./images/l4.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./images/l5.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./images/l6.jpg" alt=""></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <ul class="category">
+      <li>
+        <a href="#">
+          <img src="./images/nav0.png" alt="">
+          <p>分类</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="./images/nav1.png" alt="">
+          <p>分类</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="./images/nav2.png" alt="">
+          <p>分类</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="./images/nav3.png" alt="">
+          <p>分类</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="./images/nav4.png" alt="">
+          <p>分类</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="./images/nav5.png" alt="">
+          <p>分类</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="./images/nav6.png" alt="">
+          <p>分类</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="./images/nav7.png" alt="">
+          <p>分类</p>
+        </a>
+      </li>
+    </ul>
+    
+    <div class="hand-kill">
+      <div class="top-bar">
+        <span class="fl hand">掌上秒杀</span>
+        <span class="fl num">0</span>
+        <span class="fl num">5</span>
+        <span class="fl mark">:</span>
+        <span class="fl num">0</span>
+        <span class="fl num">5</span>
+        <span class="fl mark">:</span>
+        <span class="fl num">0</span>
+        <span class="fl num">5</span>
+        <span class="fr more">更多</span>
+      </div>
+      <div class="product-cloth">
+        <a href="#"><img src="./images/detail01.jpg" alt=""></a>
+        <a href="#"><img src="./images/detail01.jpg" alt=""></a>
+        <a href="#"><img src="./images/detail01.jpg" alt=""></a>
+      </div>
+
+
+    </div>
+
+    <div class="market">
+      <div class="topbar">
+        <span>
+          京东超市
+        </span>
+      </div>
+      <div class="bottombar">
+        <div class="left">
+          <a href="#">
+            <img src="./images/cp2.jpg" alt="">
+          </a>
+          <a href="#">
+            <img src="./images/cp3.jpg" alt="">
+          </a>
+        </div>
+        <div class="right">
+          <a href="#">
+            <img src="./images/cp1.jpg" alt="">
+          </a>
+
+        </div>
+      </div>
+    </div>
+    <div class="market">
+      <div class="topbar">
+        <span>
+          京东超市
+        </span>
+      </div>
+      <div class="bottombar">
+        <div class="left">
+          <a href="#">
+            <img src="./images/cp5.jpg" alt="">
+          </a>
+          <a href="#">
+            <img src="./images/cp6.jpg" alt="">
+          </a>
+        </div>
+        <div class="right">
+          <a href="#">
+            <img src="./images/cp4.jpg" alt="">
+          </a>
+
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+</body>
+
+</html>
