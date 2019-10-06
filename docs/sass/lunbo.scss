@@ -1,0 +1,37 @@
+@import "./base";
+@import "./fonticon";
+
+.wjs-lunbo {
+  .carousel-inner .item {
+    img{
+      width: 100%;
+    }
+    .img {
+      height: 410px;
+    }
+
+    &:nth-child(1) {
+      .img {
+        background: url('../images/01.jpg') no-repeat center;
+      }
+    }
+
+    &:nth-child(2) {
+      .img {
+        background: url('../images/02.jpg') no-repeat center;
+      }
+    }
+
+    &:nth-child(3) {
+      .img {
+        background: url('../images/03.jpg') no-repeat center;
+      }
+    }
+
+    &:nth-child(4) {
+      .img {
+        background: url('../images/04.jpg') no-repeat center;
+      }
+    }
+  }
+}

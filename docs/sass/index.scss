@@ -1,0 +1,213 @@
+@import "./base";
+@import "./fonticon";
+
+$mainGreyColor:#666;
+$assistGreyColor:#888;
+
+a {
+  text-decoration: none;
+  color: #666666;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #444;
+
+}
+
+//顶部小导航条开始
+.wjs-nav {
+  height: 40px;
+
+  border-bottom: 1px solid #ccc;
+
+  a {
+    line-height: 40px;
+    padding: 0;
+    text-align: center;
+
+  }
+
+  .login a {
+    margin: 0 5px;
+  }
+
+  .save-center {
+    background-color: red;
+    color: white;
+  }
+}
+
+//顶部小导航条结束
+
+//顶部导航条开始
+.nav-main {
+  font-size: 20px;
+  margin: 0;
+  .navbar-brand {
+    font-size: 30px;
+
+    .icon-logo {
+      &::before {
+        color: #f00;
+
+      }
+    }
+
+    .icon-weijinsuo {
+      &::before {
+        color: #000000;
+      }
+    }
+
+
+
+  }
+}
+//顶部导航条结束
+
+// 轮播图开始
+.wjs-lunbo {
+  .carousel-inner .item {
+    img {
+      width: 100%;
+    }
+
+    .img {
+      height: 410px;
+    }
+
+    &:nth-child(1) {
+      .img {
+        background: url('../images/01.jpg') no-repeat center;
+      }
+    }
+
+    &:nth-child(2) {
+      .img {
+        background: url('../images/02.jpg') no-repeat center;
+      }
+    }
+
+    &:nth-child(3) {
+      .img {
+        background: url('../images/03.jpg') no-repeat center;
+      }
+    }
+
+    &:nth-child(4) {
+      .img {
+        background: url('../images/04.jpg') no-repeat center;
+      }
+    }
+  }
+}
+
+// 轮播图结束
+
+//中部小banner开始
+.center-banner {
+  padding: 10px 0;
+    color: #666666;
+  
+    a {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      &:nth-child(4){
+        border-right: 1px solid #ccc;
+      }
+  
+      span {
+        font-size: 80px;
+      }
+      .sea-fs-p{
+        font-size: 20px;
+      }
+    }
+    div{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      .time-num-p{
+        color: red;
+      }
+    }
+  }
+//中部小banner结束
+
+// 底部banner开始
+.banner-bottom {
+  .ban-bot-box {
+    display: flex;
+    padding: 0px;
+    margin-bottom: 5px;
+
+    .right {
+      background-color: #dddddd;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      //之前是控制水平,现在是控制垂直
+      justify-content: space-around;
+      flex: 1;
+      border-left: solid 5px #ed9197;
+      border-top: solid 5px #ed9197;
+
+      .monthRate,
+      .center-block {
+        color: $assistGreyColor;
+      }
+
+      .title {
+        font-size: 20px;
+        color: $mainGreyColor;
+
+        span {
+          font-size: 12px;
+          background-color: #ff0000;
+          color: white;
+          padding: 2px 5px;
+          border-radius: 12px;
+          font-weight: bold;
+          margin-left: 10px;
+        }
+      }
+
+      .ban-rig-cen {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        li {
+          flex: 1;
+          font-size: 16px;
+
+          .progress {
+            height: 10px;
+            width: 150px;
+          }
+
+          .num {
+            color: #f45647;
+            font-size: 18px;
+          }
+
+          .year-rate {
+            color: $mainGreyColor;
+          }
+        }
+
+      }
+
+      .btn-tz {
+        margin: 0 auto;
+      }
+    }
+  }
+}
+// 底部banner结束

@@ -1,89 +1,4 @@
 @charset "UTF-8";
-/* 导入 字体文件 */
-@font-face {
-  font-family: 'wjsfont';
-  src: url("../fonts/MiFie-Web-Font.eot");
-  src: url("../fonts/MiFie-Web-Font.eot?#iefix") format("embedded-opentype"), url("../fonts/MiFie-Web-Font.woff") format("woff"), url("../fonts/MiFie-Web-Font.ttf") format("truetype"), url("../fonts/MiFie-Web-Font.svg") format("svg"); }
-/* 定义 使用的class */
-.wjsfont {
-  position: relative;
-  top: 1px;
-  display: inline-block;
-  font-family: 'wjsfont';
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1; }
-
-.wjsfont-logo::before {
-  content: '\e920'; }
-
-.wjsfont-name::before {
-  content: '\e921'; }
-
-.wjsfont-e903::before {
-  content: '\e903'; }
-
-.wjsfont-e901::before {
-  content: '\e901'; }
-
-.wjsfont-e904::before {
-  content: '\e904'; }
-
-.wjsfont-e905::before {
-  content: '\e905'; }
-
-.wjsfont-e902::before {
-  content: '\e902'; }
-
-/* 添加 产品列表的 文字样式 */
-.wjsfont-e915::before {
-  content: '\e915'; }
-
-.wjsfont-new01::before {
-  content: "\e90e"; }
-
-.wjsfont-new02::before {
-  content: "\e90f"; }
-
-.wjsfont-new03::before {
-  content: "\e910"; }
-
-.wjsfont-new04::before {
-  content: "\e911"; }
-
-/* 网页 最下方的 合作单位 */
-.wjsfont-partner01::before {
-  content: "\e946"; }
-
-.wjsfont-partner02::before {
-  content: "\e92f"; }
-
-.wjsfont-partner03::before {
-  content: "\e92e"; }
-
-.wjsfont-partner04::before {
-  content: "\e92a"; }
-
-.wjsfont-partner05::before {
-  content: "\e929"; }
-
-.wjsfont-partner06::before {
-  content: "\e931"; }
-
-.wjsfont-partner07::before {
-  content: "\e92c"; }
-
-.wjsfont-partner08::before {
-  content: "\e92b"; }
-
-.wjsfont-partner09::before {
-  content: "\e92d"; }
-
-ul, ol {
-  list-style: none;
-  padding: 0;
-  margin: 0; }
-
 @font-face {
   font-family: 'MiFie-Website-Font';
   src: url("../css/fonts/MiFie-Web-Font.eot");
@@ -596,49 +511,98 @@ ul, ol {
   color: #576b7f;
   border: none; }
 
+/* 导入 字体文件 */
+@font-face {
+  font-family: 'wjsfont';
+  src: url("../fonts/MiFie-Web-Font.eot");
+  src: url("../fonts/MiFie-Web-Font.eot?#iefix") format("embedded-opentype"), url("../fonts/MiFie-Web-Font.woff") format("woff"), url("../fonts/MiFie-Web-Font.ttf") format("truetype"), url("../fonts/MiFie-Web-Font.svg") format("svg"); }
+/* 定义 使用的class */
+.wjsfont {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'wjsfont';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1; }
+
+.wjsfont-logo::before {
+  content: '\e920'; }
+
+.wjsfont-name::before {
+  content: '\e921'; }
+
+.wjsfont-e903::before {
+  content: '\e903'; }
+
+.wjsfont-e901::before {
+  content: '\e901'; }
+
+.wjsfont-e904::before {
+  content: '\e904'; }
+
+.wjsfont-e905::before {
+  content: '\e905'; }
+
+.wjsfont-e902::before {
+  content: '\e902'; }
+
+/* 添加 产品列表的 文字样式 */
+.wjsfont-e915::before {
+  content: '\e915'; }
+
+.wjsfont-new01::before {
+  content: "\e90e"; }
+
+.wjsfont-new02::before {
+  content: "\e90f"; }
+
+.wjsfont-new03::before {
+  content: "\e910"; }
+
+.wjsfont-new04::before {
+  content: "\e911"; }
+
+/* 网页 最下方的 合作单位 */
+.wjsfont-partner01::before {
+  content: "\e946"; }
+
+.wjsfont-partner02::before {
+  content: "\e92f"; }
+
+.wjsfont-partner03::before {
+  content: "\e92e"; }
+
+.wjsfont-partner04::before {
+  content: "\e92a"; }
+
+.wjsfont-partner05::before {
+  content: "\e929"; }
+
+.wjsfont-partner06::before {
+  content: "\e931"; }
+
+.wjsfont-partner07::before {
+  content: "\e92c"; }
+
+.wjsfont-partner08::before {
+  content: "\e92b"; }
+
+.wjsfont-partner09::before {
+  content: "\e92d"; }
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
 a {
   text-decoration: none;
-  color: #666666; }
+  color: #666; }
 
 a:hover {
   text-decoration: none;
-  color: #444; }
-
-.wjs-nav {
-  height: 40px;
-  border-bottom: 1px solid #ccc; }
-  .wjs-nav a {
-    line-height: 40px;
-    padding: 0;
-    text-align: center; }
-  .wjs-nav .login a {
-    margin: 0 5px; }
-  .wjs-nav .save-center {
-    background-color: red;
-    color: white; }
-
-.nav-main {
-  font-size: 20px;
-  margin: 0; }
-  .nav-main .navbar-brand {
-    font-size: 30px; }
-    .nav-main .navbar-brand .icon-logo::before {
-      color: #f00; }
-    .nav-main .navbar-brand .icon-weijinsuo::before {
-      color: #000000; }
-
-.wjs-lunbo .carousel-inner .item img {
-  width: 100%; }
-.wjs-lunbo .carousel-inner .item .img {
-  height: 410px; }
-.wjs-lunbo .carousel-inner .item:nth-child(1) .img {
-  background: url("../images/01.jpg") no-repeat center; }
-.wjs-lunbo .carousel-inner .item:nth-child(2) .img {
-  background: url("../images/02.jpg") no-repeat center; }
-.wjs-lunbo .carousel-inner .item:nth-child(3) .img {
-  background: url("../images/03.jpg") no-repeat center; }
-.wjs-lunbo .carousel-inner .item:nth-child(4) .img {
-  background: url("../images/04.jpg") no-repeat center; }
+  color: #666; }
 
 .center-banner {
   padding: 10px 0;
@@ -662,51 +626,4 @@ a:hover {
     .center-banner div .time-num-p {
       color: red; }
 
-.banner-bottom .ban-bot-box {
-  display: flex;
-  padding: 0px;
-  margin-bottom: 5px; }
-  .banner-bottom .ban-bot-box .right {
-    background-color: #dddddd;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around;
-    flex: 1;
-    border-left: solid 5px #ed9197;
-    border-top: solid 5px #ed9197; }
-    .banner-bottom .ban-bot-box .right .monthRate,
-    .banner-bottom .ban-bot-box .right .center-block {
-      color: #888; }
-    .banner-bottom .ban-bot-box .right .title {
-      font-size: 20px;
-      color: #666; }
-      .banner-bottom .ban-bot-box .right .title span {
-        font-size: 12px;
-        background-color: #ff0000;
-        color: white;
-        padding: 2px 5px;
-        border-radius: 12px;
-        font-weight: bold;
-        margin-left: 10px; }
-    .banner-bottom .ban-bot-box .right .ban-rig-cen {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between; }
-      .banner-bottom .ban-bot-box .right .ban-rig-cen li {
-        flex: 1;
-        font-size: 16px; }
-        .banner-bottom .ban-bot-box .right .ban-rig-cen li .progress {
-          height: 10px;
-          width: 150px; }
-        .banner-bottom .ban-bot-box .right .ban-rig-cen li .num {
-          color: #f45647;
-          font-size: 18px; }
-        .banner-bottom .ban-bot-box .right .ban-rig-cen li .year-rate {
-          color: #666; }
-    .banner-bottom .ban-bot-box .right .btn-tz {
-      margin: 0 auto; }
-
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=center-banner.css.map */

@@ -596,72 +596,6 @@ ul, ol {
   color: #576b7f;
   border: none; }
 
-a {
-  text-decoration: none;
-  color: #666666; }
-
-a:hover {
-  text-decoration: none;
-  color: #444; }
-
-.wjs-nav {
-  height: 40px;
-  border-bottom: 1px solid #ccc; }
-  .wjs-nav a {
-    line-height: 40px;
-    padding: 0;
-    text-align: center; }
-  .wjs-nav .login a {
-    margin: 0 5px; }
-  .wjs-nav .save-center {
-    background-color: red;
-    color: white; }
-
-.nav-main {
-  font-size: 20px;
-  margin: 0; }
-  .nav-main .navbar-brand {
-    font-size: 30px; }
-    .nav-main .navbar-brand .icon-logo::before {
-      color: #f00; }
-    .nav-main .navbar-brand .icon-weijinsuo::before {
-      color: #000000; }
-
-.wjs-lunbo .carousel-inner .item img {
-  width: 100%; }
-.wjs-lunbo .carousel-inner .item .img {
-  height: 410px; }
-.wjs-lunbo .carousel-inner .item:nth-child(1) .img {
-  background: url("../images/01.jpg") no-repeat center; }
-.wjs-lunbo .carousel-inner .item:nth-child(2) .img {
-  background: url("../images/02.jpg") no-repeat center; }
-.wjs-lunbo .carousel-inner .item:nth-child(3) .img {
-  background: url("../images/03.jpg") no-repeat center; }
-.wjs-lunbo .carousel-inner .item:nth-child(4) .img {
-  background: url("../images/04.jpg") no-repeat center; }
-
-.center-banner {
-  padding: 10px 0;
-  color: #666666; }
-  .center-banner a {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center; }
-    .center-banner a:nth-child(4) {
-      border-right: 1px solid #ccc; }
-    .center-banner a span {
-      font-size: 80px; }
-    .center-banner a .sea-fs-p {
-      font-size: 20px; }
-  .center-banner div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center; }
-    .center-banner div .time-num-p {
-      color: red; }
-
 .banner-bottom .ban-bot-box {
   display: flex;
   padding: 0px;
@@ -709,4 +643,4 @@ a:hover {
     .banner-bottom .ban-bot-box .right .btn-tz {
       margin: 0 auto; }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=bottom.css.map */

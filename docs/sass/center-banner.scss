@@ -1,0 +1,46 @@
+@import "./fonticon";
+@import "./base.scss";
+
+a {
+  text-decoration: none;
+  color: #666;
+
+}
+
+a:hover {
+  text-decoration: none;
+  color: #666;
+
+
+}
+
+.center-banner {
+padding: 10px 0;
+  color: #666666;
+
+  a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    &:nth-child(4){
+      border-right: 1px solid #ccc;
+    }
+
+    span {
+      font-size: 80px;
+    }
+    .sea-fs-p{
+      font-size: 20px;
+    }
+  }
+  div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    .time-num-p{
+      color: red;
+    }
+  }
+}

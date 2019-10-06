@@ -1,0 +1,77 @@
+@import "./base.scss";
+@import "./fonticon";
+
+$mainGreyColor:#666;
+$assistGreyColor:#888;
+
+.banner-bottom {
+  .ban-bot-box {
+    display: flex;
+    padding: 0px;
+    margin-bottom: 5px;
+
+    .right {
+      background-color: #dddddd;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      //之前是控制水平,现在是控制垂直
+      justify-content: space-around;
+      flex: 1;
+      border-left: solid 5px #ed9197;
+      border-top: solid 5px #ed9197;
+
+      .monthRate,
+      .center-block {
+        color: $assistGreyColor;
+      }
+
+      .title {
+        font-size: 20px;
+        color: $mainGreyColor;
+
+        span {
+          font-size: 12px;
+          background-color: #ff0000;
+          color: white;
+          padding: 2px 5px;
+          border-radius: 12px;
+          font-weight: bold;
+          margin-left: 10px;
+        }
+      }
+
+      .ban-rig-cen {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        li {
+          flex: 1;
+          font-size: 16px;
+
+          .progress {
+            height: 10px;
+            width: 150px;
+          }
+
+          .num {
+            color: #f45647;
+            font-size: 18px;
+          }
+
+          .year-rate {
+            color: $mainGreyColor;
+          }
+        }
+
+      }
+
+      .btn-tz {
+        margin: 0 auto;
+      }
+    }
+  }
+}
