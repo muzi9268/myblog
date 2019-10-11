@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./lib/swiper/css/swiper.min.css">
+  <script src="./lib/swiper/js/swiper.min.js"></script>
+</head>
+<style>
+  .swiper-container {
+    padding: 50px;
+  }
+
+  .swiper-slide {
+    width: 300px;
+    height: 340px;
+    background-color: green;
+  }
+
+  .mian {
+    margin: 100px auto;
+    width: 500px;
+    height: 400px;
+    background-color: yellow;
+  }
+
+  .swiper-slide {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .title {
+    flex-basis: 40px;
+    background-color: #fff;
+    margin: 0;
+  }
+
+  .swiper-slide .img {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .swiper-slide img {
+    width: 50%;
+    height: 50%;
+  }
+</style>
+
+<body>
+  <div class="mian">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <p class="title">美女</p>
+          <div class="img">
+            <img src="./img/02-head-icons/01.jpg" alt="">
+            <img src="./img/02-head-icons/02.jpg" alt="">
+            <img src="./img/02-head-icons/03.jpg" alt="">
+            <img src="./img/02-head-icons/04.jpg" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+            <p class="title">美女</p>
+            <div class="img">
+              <img src="./img/02-head-icons/01.jpg" alt="">
+              <img src="./img/02-head-icons/02.jpg" alt="">
+              <img src="./img/02-head-icons/03.jpg" alt="">
+              <img src="./img/02-head-icons/04.jpg" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide">
+              <p class="title">美女</p>
+              <div class="img">
+                <img src="./img/02-head-icons/01.jpg" alt="">
+                <img src="./img/02-head-icons/02.jpg" alt="">
+                <img src="./img/02-head-icons/03.jpg" alt="">
+                <img src="./img/02-head-icons/04.jpg" alt="">
+              </div>
+            </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</body>
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+      rotate: 10, //旋转的角度
+      stretch: -40, //每一屏之间的间隔
+      depth: 100, //视差，如果值越大，中间的元素显得就越大
+      modifier: 1,
+      slideShadows: true,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  });
+</script>
+
+</html>

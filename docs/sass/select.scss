@@ -1,0 +1,150 @@
+@import "./swiper-index";
+
+@function pre($p) {
+  @return ($p/64)+rem;
+}
+
+body {
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+//搜索栏开始
+.search {
+  margin: pre(10);
+  position: relative;
+  background: #cccccc;
+  border-radius: pre(15);
+  overflow: hidden;
+
+  .spread {
+    width: pre(34);
+    height: pre(34);
+    position: absolute;
+    left: pre(50);
+    top: pre(15);
+
+  }
+
+  .img-search-logo {
+    width: pre(75*0.8);
+    height: pre(60*0.8);
+    position: absolute;
+    right: pre(50);
+    top: pre(0);
+  }
+
+  input {
+    outline: none;
+    border: none;
+    background: #cccccc;
+    width: pre(620);
+    height: pre(60);
+    padding-left: pre(100);
+  }
+
+}
+
+//搜索栏结束
+
+// 第一个导航栏开始
+.swiper-container {
+  height: pre(360);
+
+  .swiper-wrapper {
+    .swiper-slide {
+      img {
+        height: pre(380);
+        width: 100%;
+      }
+    }
+  }
+}
+
+// 第一个导航栏结束
+
+// 第二个导航栏开始
+.mian {
+  width: 100%;
+  height: pre(800);
+  background-color: skyblue;
+
+  .swiper-container2 {
+    padding: pre(50);
+
+    .swiper-wrapper {
+      height: pre(560);
+
+      .swiper-slide {
+        // background-color: green;
+        display: flex;
+        flex-direction: column;
+        width:pre(500);
+
+        .title {
+          padding: pre(20);
+          width: 100%;
+          text-align: center;
+          background-color: #fff;
+          margin: 0;
+        }
+
+        .img {
+          flex: 1;
+          display: flex;
+          flex-wrap: wrap;
+
+          img {
+            width: 50%;
+            height: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 第二个导航栏结束
+
+//底部条区域开始
+.bottom {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  background-color: #d3d3d3;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  a {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    font-size: pre(26);
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    color: #336162;
+
+    img {
+      height: pre(50);
+    }
+
+    &:nth-child(3) {
+      img {
+
+        height: pre(70);
+      }
+
+    }
+  }
+}
+
+//底部条区域结束

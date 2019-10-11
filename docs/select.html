@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <!-- 引入外部css -->
+  <!-- 引入bootstrap的css -->
+  <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+  <!-- 引入swiper的css (移动端的轮播图插件) -->
+  <link rel="stylesheet" href="./lib/swiper/css/swiper.min.css">
+
+  <link rel="stylesheet" href="./css/select.css">
+
+
+  <!-- 引入jq -->
+  <script src="./js/jquery-3.1.1.min.js"></script>
+  <!-- 引入bootstrap的js -->
+  <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+  <!-- 引入swiper的js (移动端的轮播图插件) -->
+  <script src="./lib/swiper/js/swiper.min.js"></script>
+
+  <!-- 设置rem -->
+  <script>
+    document.querySelector("html").style.fontSize = window.screen.width / 10 + "px";
+  </script>
+
+</head>
+
+<body>
+  <!-- 搜索栏开始 -->
+  <div class="search">
+    <img src="./img/01-app-icons/explore_search.png" alt="" class="spread">
+    <input type="text" placeholder="搜索标签朋友名字">
+    <img src="./img/01-app-icons/dashboard_find_friend.png" class="img-search-logo"></img>
+  </div>
+  <!-- 搜索栏结束 -->
+
+  <!-- 第一个导航栏开始 -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="./img/05-banner/banner1.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="./img/05-banner/banner2.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="./img/05-banner/banner3.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="./img/05-banner/banner4.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="./img/05-banner/banner5.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="./img/05-banner/banner6.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="./img/05-banner/banner7.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="./img/05-banner/banner8.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="./img/05-banner/banner10.jpg" alt=""></div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+    <!--分页器。如果放置在swiper-container外面，需要自定义样式。-->
+  </div>
+
+  <!-- 第一个导航栏结束 -->
+
+  <!-- 第二个导航栏开始 -->
+  <div class="mian">
+    <div class="swiper-container2">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="title">美女</div>
+          <div class="img">
+            <img src="./img/02-head-icons/01.jpg" alt="">
+            <img src="./img/02-head-icons/02.jpg" alt="">
+            <img src="./img/02-head-icons/07.jpg" alt="">
+            <img src="./img/02-head-icons/08.jpg" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="title">美女</div>
+          <div class="img">
+            <img src="./img/02-head-icons/01.jpg" alt="">
+            <img src="./img/02-head-icons/02.jpg" alt="">
+            <img src="./img/02-head-icons/07.jpg" alt="">
+            <img src="./img/02-head-icons/08.jpg" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="title">美女</div>
+          <div class="img">
+            <img src="./img/02-head-icons/01.jpg" alt="">
+            <img src="./img/02-head-icons/02.jpg" alt="">
+            <img src="./img/02-head-icons/07.jpg" alt="">
+            <img src="./img/02-head-icons/08.jpg" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="title">美女</div>
+          <div class="img">
+            <img src="./img/02-head-icons/01.jpg" alt="">
+            <img src="./img/02-head-icons/02.jpg" alt="">
+            <img src="./img/02-head-icons/07.jpg" alt="">
+            <img src="./img/02-head-icons/08.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 第二个导航栏结束 -->
+
+  <!-- 底部条区域开始 -->
+  <div class="bottom">
+    <a href="./index.html"><img src="./img/01-app-icons/bb_btn_home_unselect.png" alt=""><span>首页</span></a>
+    <a href="./select.html"><img src="./img/01-app-icons/tab_02.png" alt=""><span>订阅</span></a>
+    <a href="#"><img src="./img/01-app-icons/bb_btn_post_select.png" alt=""></a>
+    <a href="./message.html"><img src="./img/01-app-icons/bb_btn_message_unselect.png" alt=""><span>消息</span></a>
+    <a href="#"><img src="./img/01-app-icons/bb_btn_account_unselect.png" alt=""><span>我的</span></a>
+  </div>
+  <!-- 底部条区域结束-->
+
+
+</body>
+
+<!-- Initialize Swiper -->
+<script language="javascript">
+  var mySwiper = new Swiper('.swiper-container', {
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  })
+
+  //创建第二个轮播图的对象
+  var swiper = new Swiper('.swiper-container2', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+      rotate: 10, //旋转的角度
+      stretch: -30, //每一屏之间的间隔
+      depth: 100, //视差，如果值越大，中间的元素显得就越大
+      modifier: 1,
+      slideShadows: true,
+    },
+    });
+</script>
+
+</html>

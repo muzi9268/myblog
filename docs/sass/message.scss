@@ -22,8 +22,8 @@ a {
     .swiper-pagination-bullet {
       width: 30%;
       height: 100%;
-      background-color: white;
       border-radius: 0;
+      background-color: #fff;
 
       // scss高级语法
       @for $i from 1 to 4 {
@@ -34,13 +34,19 @@ a {
 
           @if $i==1 {
             &::before {
-              content: "关注";
+              content: "动态";
             }
           }
 
           @if $i==2 {
             &::before {
-              content: "订阅";
+              content: "消息";
+            }
+          }
+
+          @if $i==3 {
+            &::before {
+              content: "聊天";
             }
           }
         }
@@ -74,31 +80,9 @@ a {
         position: absolute;
         top: pre(70);
         left: 0;
-      }
 
-      // sass高级语法循环
-      @for $i from 1 to 4 {
-        &:nth-child(#{$i}) {
-          @if $i==1 {
-            background-color: skyblue;
-
-          }
-
-          @if $i==2 {
-            background-color: gold;
-          }
-
-        }
 
       }
-
-      // &:nth-child(1) {
-      //   background-color: skyblue;
-      // }
-
-      // &:nth-child(2) {
-      //   background-color: greenyellow;
-      // }
     }
   }
 }
